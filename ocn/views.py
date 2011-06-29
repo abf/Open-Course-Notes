@@ -8,7 +8,7 @@ from ocn.models import Paragraph
 from ocn.models import Comment
 
 def view_home(request):
-    # Simple redirect to the home page in the static folder
+    # Generate link to subject list page
     sublistlink = route_url('subject_list', request)
     return dict(subjectlistlink = sublistlink)
 

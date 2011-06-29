@@ -23,3 +23,9 @@ and short (url) name. Don't know whether it's better to change the key, or
 add paragraphs using some new interface..
 
 No tests have been written.
+
+Routing URLs with trailing slashes is not working -
+/subjects goes to the subjects page, while
+/subjects/ gives 404.
+
+Probably other stuff.

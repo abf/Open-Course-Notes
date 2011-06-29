@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>OpenCoureNotes</title>
+    </head>
+    <body>
+        <h1>
+            Welcome to OCN.
+        </h1>
+        <p>
+            To <a href="${subjectlistlink}">subject list</a>.
+        </p>
+    </body>
+</html>

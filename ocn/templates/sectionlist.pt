@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>Sections for ${subjectname}</title>
+    </head>
+    <body>
+        <p>
+            Sections
+        </p>
+        <table>
+            <tr tal:repeat="link link_info">
+                <td>
+                    <a href="${link[1]}" tal:content="link[0]">#</a>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <a href="/subjects">Return</a>
+        </p>
+    </body>
+</html>

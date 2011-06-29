@@ -1,0 +1,55 @@
+body {
+	background: #eee;
+	font-family: 'Vollkorn', georgia, serif;
+}
+
+#sidebar {
+	color: #fff;
+	text-align: center;
+	background: #c91a1a;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 50px;
+	width: 200px;
+}
+
+#content {
+	height: 100%;
+	margin: 0 0 0 200px;
+	top: 0;
+	width: 460px;
+	background: #fff;
+}
+
+.maincontainer {
+	padding: 0.2em 1.2em 1.2em;
+}
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+}
+
+h2 {
+	font-style: italic;
+	font-size: 120%;
+	line-height: 120%;
+	font-weight: normal;
+}
+
+.commentbox{
+	background: #c2d4e8;
+	padding: 1em;
+	font-size: 85%;
+}
+
+.comment-toggle {
+	color: #888;
+	font-size: 80%;
+} 
+/* this doesn't work yet */
+.comment-toggle:hover {
+	font-color:#fff;
+}
+

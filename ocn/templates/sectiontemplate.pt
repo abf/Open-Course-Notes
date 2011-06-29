@@ -1,0 +1,60 @@
+<html>
+	<head>
+
+		<title tal:content="sectionname">Section Name</title>
+		<link rel="stylesheet" href="/static/styles.css" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn:regular,italic' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.comment-toggle').click(function() {
+			$('.commentbox').toggle();
+			return false;
+		});
+	});
+	</script>
+
+	</head>
+
+<body>
+
+<div id="sidebar">
+	<div class="container">
+	<h2>
+	OpenCourseNotes
+	</h2>
+	</div>
+</div>
+
+<div id="content">
+	<div class="maincontainer">
+		<h1 tal:content="sectionname">Section Name</h1>
+		<h2>
+		Heading h2
+		</h2>
+        <p tal:repeat="c_p_pair c_p_pairs">
+            <div tal:replace="c_p_pair[0]"></div>
+            <div class="comment-toggle">
+                <span tal:content="len(c_p_pair[1])"></span> comments
+            </div>
+            <div class="commentbox" tal:repeat="comment c_p_pair[1]">
+                <div class="commentheader">
+                    <div tal:replace="comment.name">
+                        User Name
+                    </div>
+                    -
+                    <div tal:replace="comment.datetime">
+                        Comment Time
+                    </div>
+                </div>
+                <div class="commentcontent" tal:content="comment.text">
+                    Comment Content
+                </div>
+            </div>
+        </p>
+	</div>
+</div>
+
+</body>
+</html>
